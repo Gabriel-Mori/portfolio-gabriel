@@ -60,7 +60,7 @@ export const sendEmail = async (
       html: `<div><p>Email: ${values.email}</p><p>Mensagem: ${values.message}</p></div>`,
     });
   } catch (error) {
-    console.log(error);
+    console.log("errrrror", error);
 
     return {
       isSuccess: false,
@@ -72,3 +72,4 @@ export const sendEmail = async (
     isSuccess: true,
   };
 };
+

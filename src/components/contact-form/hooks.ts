@@ -7,6 +7,7 @@ export const useContactForm = () => {
   const [result, handleSend, isPending] = useFormState(sendEmail, undefined);
 
   useEffect(() => {
+    console.log("result", result);
     if (result) {
       if (result.isServerError) {
         toast.error("Ocorreu um erro inesperado. Tente novamente mais tarde.");
@@ -20,3 +21,4 @@ export const useContactForm = () => {
     isPending,
   };
 };
+

@@ -13,7 +13,6 @@ interface Props {
 
 export const Navbar = ({ text }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen);
 
   return (
     <nav
@@ -27,19 +26,29 @@ export const Navbar = ({ text }: Props) => {
         <div className="flex gap-4 max-md:hidden">
           <ul className="text-white text-sm flex items-center gap-4 pb-2">
             <li>
-              <Link href="#hero" className="stroke-button py-1">{text.home}</Link>
+              <Link href="#hero" className="stroke-button py-1">
+                {text.home}
+              </Link>
             </li>
             <li>
-              <Link href="#about-me" className="stroke-button py-1">{text.aboutMe}</Link>
+              <Link href="#about-me" className="stroke-button py-1">
+                {text.aboutMe}
+              </Link>
             </li>
             <li>
-              <Link href="#work-exp" className="stroke-button py-1">{text.workExp}</Link>
+              <Link href="#work-exp" className="stroke-button py-1">
+                {text.workExp}
+              </Link>
             </li>
             <li>
-              <Link href="#tech" className="stroke-button py-1">{text.tech}</Link>
+              <Link href="#tech" className="stroke-button py-1">
+                {text.tech}
+              </Link>
             </li>
             <li>
-              <Link href="#projects" className="stroke-button py-1">{text.projects}</Link>
+              <Link href="#projects" className="stroke-button py-1">
+                {text.projects}
+              </Link>
             </li>
           </ul>
           <Link href="#contact-me">
@@ -69,34 +78,22 @@ export const Navbar = ({ text }: Props) => {
           >
             <ul className="text-white text-sm flex flex-col items-center gap-4 pb-2">
               <li>
-                <Link href="#hero" >
-                  {text.home}
-                </Link>
+                <Link href="#hero">{text.home}</Link>
               </li>
               <li>
-                <Link href="#about-me" >
-                  {text.aboutMe}
-                </Link>
+                <Link href="#about-me">{text.aboutMe}</Link>
               </li>
               <li>
-                <Link href="#work-exp" >
-                  {text.workExp}
-                </Link>
+                <Link href="#work-exp">{text.workExp}</Link>
               </li>
               <li>
-                <Link href="#tech" >
-                  {text.tech}
-                </Link>
+                <Link href="#tech">{text.tech}</Link>
               </li>
               <li>
-                <Link href="#projects" >
-                  {text.projects}
-                </Link>
+                <Link href="#projects">{text.projects}</Link>
               </li>
               <li>
-                <Link href="#contact-me" >
-                  {text.contact}
-                </Link>
+                <Link href="#contact-me">{text.contact}</Link>
               </li>
             </ul>
           </motion.div>
@@ -105,3 +102,4 @@ export const Navbar = ({ text }: Props) => {
     </nav>
   );
 };
+
