@@ -8,6 +8,11 @@ import { ToastSetup } from "@/lib/toast";
 export const metadata: Metadata = {
   title: "Portfólio | Gabriel Mori",
   description: "Portfólio de Gabriel Mori",
+  icons: {
+    icon: ["/favicon.ico"],
+    apple: ["/apple-touch-icon.png"],
+    shortcut: ["/apple-touch-icon.png"],
+  },
 };
 
 export default function RootLayout({
