@@ -7,3 +7,5 @@ export const transporter = nodemailer.createTransport({
     pass: process.env.SENDER_PASSWORD,
   },
 });
+console.log("auth", transporter);
+
